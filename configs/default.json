@@ -1,0 +1,25 @@
+{
+    "environment": {
+        "window_size": 16,
+        "currencies": ["EUR", "BTC", "ETH"],
+        "usable_instruments": ["BTCEUR", "ETHBTC", "ETHEUR"],
+        "base_currency": "EUR",
+        "starting_balance": 100.0,
+        "fees": 0.00075,
+        "ignore_instruments": [],
+        "episode_length": 100,
+        "discretize": true,
+        "discrete_actions": [-1, -0.1, 0, 0.1, 1],
+        "data": {
+            "test_sample": true,
+            "sequence": {
+                "numerical": ["open", "high", "low", "close", "volume_log", "trades_log"],
+                "categorical": []
+            },
+            "constant": {
+                "numerical": ["year_scaled", "sin_hour", "cos_hour", "sin_min", "cos_min"],
+                "categorical": ["day_of_year", "day_of_week"]
+            }
+        }
+    }
+}
